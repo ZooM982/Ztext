@@ -1,0 +1,40 @@
+.conversation-list {
+    background-color: #f8f9fa; /* Couleur de fond claire */
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    padding: 16px;
+    max-height: 400px;
+    overflow-y: auto; /* Scroll si trop de conversations */
+}
+
+h3 {
+    margin-bottom: 12px;
+}
+
+ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+.conversation-item {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px;
+    border-bottom: 1px solid #e0e0e0; /* Ligne de séparation */
+    cursor: pointer;
+    transition: background-color 0.2s;
+}
+
+.conversation-item:hover {
+    background-color: #e9ecef; /* Couleur de survol */
+}
+
+.conversation-info {
+    flex-grow: 1;
+}
+
+.conversation-timestamp {
+    color: #6c757d; /* Couleur grise pour l'horodatage */
+    font-size: 0.85rem;
+}

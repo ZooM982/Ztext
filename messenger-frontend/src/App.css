@@ -1,0 +1,70 @@
+/* styles.css */
+
+.chat {
+  display: flex;
+  flex-direction: column;
+  height: 100vh;
+  border: 1px solid #ccc;
+}
+
+header {
+  background: #007bff;
+  color: white;
+  padding: 10px;
+  text-align: center;
+}
+
+.conversation-list, .user-list, .message-window{
+  flex: 1;
+  padding: 10px;
+  border: 1px solid #ccc;
+}
+
+
+.messages {
+  max-height: 300px;
+  overflow-y: auto;
+  margin-bottom: 10px;
+}
+
+
+.message-window {
+  display: flex;
+  flex-direction: column;
+}
+
+.message-sent {
+  width: 50%;
+  text-align: end;
+  background-color: #74e220; 
+  padding: 10px;
+  margin: 10px 0 0 50%; 
+  border-radius: 8px;
+}
+
+.message-received {
+  width: 50%;
+  text-align: start;
+  background-color: #f1f0f0; 
+  padding: 10px;
+  margin: 10px 0; 
+  border-radius: 8px;
+}
+
+
+.message-group {
+  margin: 10px 0;
+}
+
+.message-date {
+  font-weight: bold;
+  margin-bottom: 5px;
+  text-align: center;
+  color: gray;
+}
+
+.message-time {
+  font-size: 0.8em;
+  color: #999;
+  text-align: right;
+}
