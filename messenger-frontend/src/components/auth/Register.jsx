@@ -30,7 +30,6 @@ function Register() {
     return (
         <div className="register-container text-center">
             <NavBar />
-            <h2>Inscription</h2>
             {error && <p className="error">{error}</p>}
             {success && <p className="success">{success}</p>}
             <div className='md:flex'>

@@ -32,18 +32,17 @@ function Login({ onLogin }) {
     return (
         <section>
             <NavBar />
-            <h1 className='text-center text-[20px] my-3 '>Connexion</h1>
             <div className='md:flex'>
-                <div className='md:w-[47%] '>
+                <div className='md:w-[47%] md:mt-[150px]'>
                     <img src={loginWeb} alt="" className='hidden md:block ' />
                     <img src={loginMobile} alt="" className='md:hidden size-[80%] mx-auto my-2 ' />
                 </div>
-                <div className='md:w-[47%] content-center '>
+                <div className='md:w-[47%] content-center md:mt-[150px] '>
                     <form onSubmit={handleSubmit} className='w-[80%] md:w[100%] border-2 mx-auto rounded-[20px] p-3 my-2 '>
                         <div className='grid my-2'>
                             <label htmlFor="username">Nom d'utilisateur</label>
                             <input
-                                className='h-[40px] border rounded-[10px] p-2 focus:border-blue-500 focus:outline-none'
+                                className='h-[40px] border rounded-[10px] p-2 border-2 focus:border-blue-500 focus:outline-none'
                                 type="text"
                                 id="username"
                                 placeholder="Username"
@@ -55,7 +54,7 @@ function Login({ onLogin }) {
                         <div className='grid my-2'>
                             <label htmlFor="password">Mot de passe</label>
                             <input
-                                className='h-[40px] border rounded-[10px] p-2 focus:border-blue-500 focus:outline-none'
+                                className='h-[40px] border rounded-[10px] p-2 border-2 focus:border-blue-500 focus:outline-none'
                                 type="password"
                                 id="password"
                                 placeholder="Mot de passe"
