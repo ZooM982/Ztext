@@ -2,7 +2,7 @@ import axios from "axios";
 import { io } from "socket.io-client";
 
 const api = axios.create({
-  baseURL: "https://ztext.onrender.com",
+  baseURL: "https://ztext.onrender.com/api",
   headers: {
     "Content-Type": "application/json",
   },
