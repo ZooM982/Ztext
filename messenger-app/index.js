@@ -18,7 +18,7 @@ const app = express();
 const server = http.createServer(app);
 const io = socketIo(server, {
   cors: {
-    origin: "https://ztext-front.onrender.com/",
+    origin: "https://ztext-front.onrender.com",
     methods: ["GET", "POST"],
     credentials: true,
   },
