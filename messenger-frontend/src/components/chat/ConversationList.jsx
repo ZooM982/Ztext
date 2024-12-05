@@ -2,7 +2,7 @@ import React, { useEffect, useState } from 'react';
 import io from 'socket.io-client';
 import './ConversationList.css'; // Assurez-vous d'importer le fichier CSS
 
-const socket = io('http://localhost:5000'); // Connexion au serveur Socket.IO
+const socket = io('https://ztext.onrender.com'); // Connexion au serveur Socket.IO
 
 function ConversationList({ conversations, currentUserId, onSelectConversation }) {
     const [liveConversations, setLiveConversations] = useState(conversations);
