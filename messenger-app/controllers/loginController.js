@@ -1,6 +1,6 @@
 // controllers/loginController.js
 const User = require('../models/User');
-const bcrypt = require('bcrypt');
+const bcrypt = require('bcryptjs');
 const jwt = require('jsonwebtoken'); // Assurez-vous d'avoir installé jsonwebtoken
 
 // Fonction de connexion

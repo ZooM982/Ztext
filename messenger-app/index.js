@@ -18,14 +18,14 @@ const app = express();
 const server = http.createServer(app);
 const io = socketIo(server, {
   cors: {
-    origin: "http://localhost:3001",
+    origin: "http://localhost:3000",
     methods: ["GET", "POST"],
     credentials: true,
   },
 });
 
 // Middleware CORS et JSON
-app.use(cors({ origin: "http://localhost:3001", credentials: true }));
+app.use(cors({ origin: "http://localhost:3000", credentials: true }));
 app.use(express.json());
 
 // Connexion à MongoDB
