@@ -26,7 +26,10 @@ const io = socketIo(server, {
 
 // Middleware CORS et JSON
 app.use(
-  cors({ origin: "https://ztext-front.onrender.com/", credentials: true })
+  cors({ origin: "https://ztext-front.onrender.com", 
+    methods: ["GET", "POST"],
+    credentials: true
+   })
 );
 app.use(express.json());
 
