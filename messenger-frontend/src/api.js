@@ -8,10 +8,11 @@ const api = axios.create({
   },
 });
 
-// Configuration du socket
+
 const socket = io("https://ztext.onrender.com", {
   transports: ["websocket"],
-  autoConnect: true, // Connecte automatiquement le socket
+  withCredentials: true,
+  autoConnect: true, 
 });
 
 api.interceptors.request.use((config) => {
